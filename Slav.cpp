@@ -1,5 +1,6 @@
 #include "Slav.h"
 #include <fstream>
+#include <iterator>
 
 using namespace std;
 
@@ -22,6 +23,14 @@ Slav::Slav()
 	_name = names[rand() % amountOfNames];
 	_id = _counter++;
 }
+
+/*sex Slav::slav_sex()
+{
+	for(int i = 0; i < _counter; i++)
+	{
+		return (_name.end=="a")?female:male;
+	}
+}*/
 
 string Slav::description()
 {
