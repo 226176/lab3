@@ -98,6 +98,26 @@ void containers(Slav * slavs, int n)
 	}
 	
 	REPORT_CONTAINERS;
+
+	/*map<sex, vector<Slav *>> mapOfMenAndWomen;
+	vector<Slav *> vectorOfMales;
+	vector<Slav *> vectorOfFemales;
+	sex men = male;
+	sex women = female;
+	for(int i = 0; i < n; i++)
+	{
+		if(slaves[i].slav_sex() == men )
+		{
+			vectorOfMales.push_back(&slaves[i]);
+		}
+		if(slaves[i].slav_sex() == women)
+		{
+			vectorOfFemales.push_back(&slaves[i]);
+		}
+	}
+	mapOfMenAndWomen.insert(pair<sex, vector<Slav *>>(men, vectorOfMales);
+	mapOfMenAndWomen.insert(pair<sex, vector<Slav *>>(women, vectorOfFemales);*/
+
 }
 
 void adapters(Slav * slavs, int n)

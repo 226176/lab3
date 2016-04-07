@@ -18,8 +18,12 @@ void Slav::init()
 }
 
 Slav::Slav()
-{
-	static int amountOfNames = (init(), names.size());
+{	/*Do amountOfNames przypisywana jest liczba wczytanych słowian (wartość zwracana przez
+	funkcję size()). Odbywa się to tylko raz
+	ponieważ przed wyrażeniem znajduje się "static". Tworzenie tego obiektu jest opóźnione.
+	Proces ten nazywany jest leniwym inicjowaniem */
+	
+	static int amountOfNames = (init(), names.size()); 
 	_name = names[rand() % amountOfNames];
 	_id = _counter++;
 }
@@ -28,7 +32,7 @@ Slav::Slav()
 {
 	for(int i = 0; i < _counter; i++)
 	{
-		return (_name.end=="a")?female:male;
+		return (*_name.end()=="a")?female:male;
 	}
 }*/
 

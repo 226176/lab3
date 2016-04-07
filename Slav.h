@@ -23,7 +23,7 @@ private:
 public:
 	Slav();
 
-	/*sex slav_sex();*/
+	//sex slav_sex();
 
 	static int counter() { return _counter; }
 	
